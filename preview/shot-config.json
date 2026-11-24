@@ -1,0 +1,379 @@
+{
+ "accent": "#10B981",
+ "bg": "#F2F7F4",
+ "business": "Manchester Business Help Centre",
+ "clusterHistory": [
+  [
+   "CLU-E52C15",
+   "tfidf",
+   "3",
+   "3.140",
+   "0.285",
+   "1.00"
+  ],
+  [
+   "CLU-86F4AC",
+   "tfidf",
+   "4",
+   "10.162",
+   "0.042",
+   "0.94"
+  ]
+ ],
+ "collections": [
+  [
+   "Business Help Articles",
+   "16 documents",
+   "Dental & clinics \u00b7 Food & hospitality \u00b7 Fitness & wellness \u00b7 Property & lettings"
+  ],
+  [
+   "Topic Check Set",
+   "9 documents",
+   "dental \u00b7 fitness \u00b7 recipes \u2014 the hand-verifiable fixture set"
+  ],
+  [
+   "Support Answer Drafts",
+   "6 documents",
+   "accounts \u00b7 bookings \u00b7 deliveries \u00b7 payments"
+  ]
+ ],
+ "compare": {
+  "a": "Dental visit basics",
+  "b": "Dental filling notes",
+  "saved": [
+   [
+    "Booking a dental check-up in Didsbury",
+    "Dental implants: what the treatment involves",
+    "tfidf",
+    "0.1544",
+    "and, dental, dentist, treatment, with"
+   ]
+  ],
+  "score": "0.5952",
+  "shared": "dentist, tooth"
+ },
+ "docDetail": {
+  "dims": 312,
+  "hashed": [
+   [
+    "38",
+    "an, examination, and",
+    "0.424"
+   ],
+   [
+    "11",
+    "treatment",
+    "0.283"
+   ],
+   [
+    "12",
+    "team, polish",
+    "0.283"
+   ],
+   [
+    "36",
+    "dentist, rays",
+    "0.283"
+   ],
+   [
+    "41",
+    "with",
+    "0.283"
+   ],
+   [
+    "52",
+    "needed, hygiene",
+    "0.283"
+   ]
+  ],
+  "tfidf": [
+   [
+    "treatment",
+    "0.347"
+   ],
+   [
+    "with",
+    "0.207"
+   ],
+   [
+    "begins",
+    "0.199"
+   ],
+   [
+    "clear",
+    "0.199"
+   ],
+   [
+    "didsbury",
+    "0.199"
+   ],
+   [
+    "digital",
+    "0.199"
+   ]
+  ],
+  "title": "Booking a dental check-up in Didsbury",
+  "tokens": 32,
+  "topic": "Dental & clinics"
+ },
+ "fixtureCluster": {
+  "clusters": [
+   [
+    "Cluster 0 \u2014 3 documents \u00b7 majority topic: dental",
+    "dentist \u00b7 implant \u00b7 tooth",
+    [
+     [
+      "Dental visit basics",
+      "dental",
+      "0.4368"
+     ],
+     [
+      "Dental filling notes",
+      "dental",
+      "0.6542"
+     ],
+     [
+      "Implant and crown notes",
+      "dental",
+      "0.6542"
+     ]
+    ]
+   ],
+   [
+    "Cluster 1 \u2014 3 documents \u00b7 majority topic: recipes",
+    "recipe \u00b7 bake \u00b7 flour",
+    [
+     [
+      "Baking basics",
+      "recipes",
+      "0.4368"
+     ],
+     [
+      "Baking with sugar",
+      "recipes",
+      "0.6542"
+     ],
+     [
+      "Flour and cake notes",
+      "recipes",
+      "0.6542"
+     ]
+    ]
+   ],
+   [
+    "Cluster 2 \u2014 3 documents \u00b7 majority topic: fitness",
+    "gym \u00b7 workout \u00b7 muscle",
+    [
+     [
+      "Gym basics",
+      "fitness",
+      "0.4368"
+     ],
+     [
+      "Cardio notes",
+      "fitness",
+      "0.6542"
+     ],
+     [
+      "Muscle training notes",
+      "fitness",
+      "0.6542"
+     ]
+    ]
+   ]
+  ],
+  "inertia": "3.140",
+  "iterations": 2,
+  "purity": "1.00",
+  "ref": "CLU-E52C15",
+  "silhouette": "0.285",
+  "trace": "iteration 1: 4.8571 \u2192 iteration 2: 3.1402"
+ },
+ "fixtureSearch": {
+  "collection": "Topic Check Set",
+  "hits": [
+   [
+    "#1 Dental visit basics",
+    "dental",
+    "0.7982",
+    [
+     [
+      "implant",
+      "0.7546",
+      "0.6024",
+      "0.4546"
+     ],
+     [
+      "dentist",
+      "0.6560",
+      "0.5237",
+      "0.3436"
+     ]
+    ]
+   ],
+   [
+    "#2 Implant and crown notes",
+    "dental",
+    "0.7457",
+    [
+     [
+      "implant",
+      "0.7546",
+      "0.5628",
+      "0.4247"
+     ],
+     [
+      "dentist",
+      "0.6560",
+      "0.4893",
+      "0.3210"
+     ]
+    ]
+   ],
+   [
+    "#3 Dental filling notes",
+    "dental",
+    "0.3210",
+    [
+     [
+      "dentist",
+      "0.6560",
+      "0.4893",
+      "0.3210"
+     ]
+    ]
+   ]
+  ],
+  "query": "dentist implant",
+  "ref": "SRC-357C64"
+ },
+ "header": "#111827",
+ "latestCluster": {
+  "inertia": "3.14",
+  "k": 3,
+  "purity": "1.00",
+  "ref": "CLU-E52C15",
+  "silhouette": "0.285"
+ },
+ "latestSearch": {
+  "hits": 3,
+  "query": "dentist implant",
+  "ref": "SRC-357C64",
+  "topScore": "0.7982",
+  "topTitle": "Dental visit basics"
+ },
+ "location": "Northern Quarter, Manchester",
+ "mainDocs": [
+  [
+   "Booking a dental check-up in Didsbury",
+   "Dental & clinics",
+   "32"
+  ],
+  [
+   "Ordering Sunday lunch for a group",
+   "Food & hospitality",
+   "34"
+  ],
+  [
+   "Starting a strength programme at the gym",
+   "Fitness & wellness",
+   "32"
+  ],
+  [
+   "Booking a property viewing in Chorlton",
+   "Property & lettings",
+   "33"
+  ],
+  [
+   "Dental implants: what the treatment involves",
+   "Dental & clinics",
+   "34"
+  ],
+  [
+   "Allergen information for our menu",
+   "Food & hospitality",
+   "33"
+  ],
+  [
+   "Cardio classes and heart-rate training",
+   "Fitness & wellness",
+   "34"
+  ],
+  [
+   "Understanding rent, deposits and tenancy agreements",
+   "Property & lettings",
+   "32"
+  ]
+ ],
+ "name": "VectorLab",
+ "owner": "Maya Patel",
+ "searchHistory": [
+  [
+   "SRC-357C64",
+   "dentist implant",
+   "tfidf",
+   "3"
+  ],
+  [
+   "SRC-1F293C",
+   "dental check-up appointment",
+   "tfidf",
+   "5"
+  ]
+ ],
+ "stats": {
+  "clusterRuns": 2,
+  "collections": 3,
+  "comparisons": 1,
+  "documents": 31,
+  "searches": 2
+ },
+ "tagline": "See what similarity really means",
+ "vocab": [
+  [
+   "and",
+   "16",
+   "1.0000"
+  ],
+  [
+   "the",
+   "10",
+   "1.4353"
+  ],
+  [
+   "your",
+   "6",
+   "1.8873"
+  ],
+  [
+   "dentist",
+   "4",
+   "2.2238"
+  ],
+  [
+   "kitchen",
+   "4",
+   "2.2238"
+  ],
+  [
+   "property",
+   "4",
+   "2.2238"
+  ],
+  [
+   "dental",
+   "3",
+   "2.4469"
+  ],
+  [
+   "training",
+   "3",
+   "2.4469"
+  ],
+  [
+   "accurate",
+   "1",
+   "3.1416"
+  ]
+ ]
+}

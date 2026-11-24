@@ -1,0 +1,37 @@
+name: VectorLab CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  verify:
+    name: Syntax & Deterministic Verification Tests
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22.x]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Verify JavaScript syntax
+        run: |
+          node --check backend/src/server.js
+          node --check backend/src/app.js
+          node --check backend/src/db.js
+          node --check backend/src/seed.js
+          node --check backend/src/seed-data.js
+          node --check backend/src/ai/engine.js
+
+      - name: Run 42-check deterministic live verification suite
+        run: node tests/run-tests.js

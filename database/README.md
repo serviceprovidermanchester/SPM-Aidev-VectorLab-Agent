@@ -1,0 +1,3 @@
+# Database — VectorLab
+
+SQLite database (11 tables: users, sessions, workspaces, workspace_settings, collections, documents, search_runs, cluster_runs, cluster_assignments, comparisons, notifications), created automatically by the backend on first start. `schema.sql` is the canonical schema (mirrored in `backend/src/db.js`); `seed.sql` mirrors the showcase workspace, its three collections and all 31 seeded documents from `backend/src/seed-data.js`. Search runs, cluster runs (with their per-document assignments) and comparisons are produced by the engine in `backend/src/ai/engine.js` and stored per run, so every stored score stays reproducible after documents are edited.

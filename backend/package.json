@@ -1,0 +1,25 @@
+{
+  "name": "spm-aidev-vectorlab-backend",
+  "version": "1.0.0",
+  "description": "VectorLab backend engine. Node.js built-in modules only (node:http, node:sqlite, node:crypto) with zero runtime dependencies. Built by SPManchester Private Limited.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node src/seed.js",
+    "check": "node --check src/server.js && node --check src/app.js && node --check src/db.js && node --check src/seed.js && node --check src/seed-data.js && node --check src/ai/engine.js"
+  },
+  "author": "Sayed Mudassar Akbar <info@spmanchester.com> (https://www.spmanchester.com/)",
+  "contributors": [
+    "SPManchester Private Limited <info@spmanchester.com> (https://www.spmanchester.com/)"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.spmanchester.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serviceprovidermanchester/SPM-Aidev-VectorLab-Agent.git"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

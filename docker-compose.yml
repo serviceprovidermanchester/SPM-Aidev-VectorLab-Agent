@@ -1,0 +1,32 @@
+# ==============================================================================
+# VectorLab - Docker Compose Service
+# SPManchester Private Limited (https://www.spmanchester.com)
+# ==============================================================================
+
+services:
+  vectorlab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: spmanchester/vectorlab:latest
+    container_name: spm-vectorlab
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - PORT=4000
+      - HOST=0.0.0.0
+      - DB_PATH=/app/data/vectorlab.sqlite
+    volumes:
+      - vectorlab-data:/app/data
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:4000/health').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+volumes:
+  vectorlab-data:
+    name: spm-vectorlab-data

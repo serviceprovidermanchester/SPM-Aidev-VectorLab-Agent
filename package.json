@@ -1,0 +1,48 @@
+{
+  "name": "spm-aidev-vectorlab",
+  "version": "1.0.0",
+  "description": "VectorLab — Transparent Vector Search & Deterministic K-Means Clustering Playground. Built by SPManchester Private Limited.",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "test": "node tests/run-tests.js",
+    "seed": "node backend/src/seed.js",
+    "check": "npm --prefix backend run check",
+    "docker:build": "docker build -t spmanchester/vectorlab:latest .",
+    "docker:run": "docker run -p 4000:4000 spmanchester/vectorlab:latest",
+    "docker:compose": "docker compose up -d"
+  },
+  "keywords": [
+    "vector-search",
+    "vector-embeddings",
+    "clustering",
+    "k-means",
+    "tf-idf",
+    "fnv1a-hash",
+    "cosine-similarity",
+    "information-retrieval",
+    "machine-learning",
+    "ai-development",
+    "llmops",
+    "explainable-ai",
+    "spmanchester",
+    "spmanchester-private-limited"
+  ],
+  "author": "Sayed Mudassar Akbar <info@spmanchester.com> (https://www.spmanchester.com/)",
+  "contributors": [
+    "SPManchester Private Limited <info@spmanchester.com> (https://www.spmanchester.com/)"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serviceprovidermanchester/SPM-Aidev-VectorLab-Agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/serviceprovidermanchester/SPM-Aidev-VectorLab-Agent/issues",
+    "email": "info@spmanchester.com"
+  },
+  "homepage": "https://www.spmanchester.com/",
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
